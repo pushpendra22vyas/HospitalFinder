@@ -54,8 +54,8 @@ const HospitalLocator = () => {
         fetchNearestHospitals(latitude, longitude);
       },
       error => {
-        console.log(error)
-        setError('Error '+error);
+        // console.log(error)
+        setError('Error : Please Turn On Your GPS Location Sign In Again ');
         setLoading(false);
       },
       { enableHighAccuracy: false, timeout: 30000, maximumAge: 1000 }
